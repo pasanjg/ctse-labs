@@ -1,0 +1,6 @@
+#IntelliJ
+.idea/
+dart_tool/
+*.iml
+*.docx
+*.pdf
