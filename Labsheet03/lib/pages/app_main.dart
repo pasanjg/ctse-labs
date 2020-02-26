@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:treva_shop/pages/login.dart';
 
-class AppMain extends StatelessWidget {
+class AppMainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,7 +9,7 @@ class AppMain extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/images/main_image_smo.jpeg'),
+              image: AssetImage('assets/images/main_image.jpeg'),
               colorFilter: ColorFilter.mode(
                 Colors.black.withOpacity(0.5),
                 BlendMode.dstATop,
@@ -30,22 +31,19 @@ class AppMain extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          width: 100,
-                          child: Divider(
-                            color: Colors.white70,
-                          ),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        child: Divider(
+                          color: Colors.white70,
                         ),
-                        Text(
-                          "Get best products in treva shop",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+                      ),
+                      Text(
+                        "Get best products in treva shop",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
                   ),
                 ),
               ),
@@ -59,8 +57,9 @@ class AppMain extends StatelessWidget {
                         splashColor: Colors.white12,
                         onPressed: () {},
                         shape: RoundedRectangleBorder(
-                            borderRadius: new BorderRadius.circular(40.0),
-                            side: BorderSide(color: Colors.white60)),
+                          borderRadius: new BorderRadius.circular(40.0),
+                          side: BorderSide(color: Colors.white60),
+                        ),
                         child: Center(
                           child: Text(
                             "Signup",
@@ -86,7 +85,7 @@ class AppMain extends StatelessWidget {
                           Expanded(
                             child: Center(
                               child: Text(
-                                "OR SKIP",
+                                "OR",
                                 style: TextStyle(
                                   color: Colors.white70,
                                 ),
@@ -106,10 +105,18 @@ class AppMain extends StatelessWidget {
                       height: 45.0,
                       child: FlatButton(
                         splashColor: Colors.white12,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => LoginPage(),
+                            ),
+                          );
+                        },
                         shape: RoundedRectangleBorder(
-                            borderRadius: new BorderRadius.circular(40.0),
-                            side: BorderSide(color: Colors.white60)),
+                          borderRadius: new BorderRadius.circular(40.0),
+                          side: BorderSide(color: Colors.white60),
+                        ),
                         child: Center(
                           child: Text(
                             "Login",

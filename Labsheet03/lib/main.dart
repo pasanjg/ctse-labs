@@ -11,7 +11,7 @@ class TrevaShop extends StatelessWidget {
       theme: ThemeData(
           fontFamily: 'AvenirNextLTPro'
       ),
-      home: AppMain(),
+      home: AppMainPage(),
     );
   }
 }
