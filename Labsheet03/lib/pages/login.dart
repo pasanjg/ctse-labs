@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:treva_shop/pages/reviews.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -178,7 +179,14 @@ class LoginPage extends StatelessWidget {
                   height: 50.0,
                   child: FlatButton(
                     padding: const EdgeInsets.all(0.0),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ReviewsPage(),
+                        ),
+                      );
+                    },
                     shape: RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(40.0),
                     ),
