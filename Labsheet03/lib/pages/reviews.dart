@@ -93,9 +93,10 @@ class _ReviewsPageState extends State<ReviewsPage> {
                 Text(
                   "Reviews",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.black,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Row(
                   children: <Widget>[
@@ -124,8 +125,9 @@ class _ReviewsPageState extends State<ReviewsPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage:
-                                  AssetImage(reviews[index]['image']),
+                              backgroundImage: AssetImage(
+                                reviews[index]['image'],
+                              ),
                             ),
                             SizedBox(width: 10.0),
                             Expanded(
@@ -134,18 +136,22 @@ class _ReviewsPageState extends State<ReviewsPage> {
                                   Row(
                                     children: <Widget>[
                                       StarRating(
-                                          rating: reviews[index]['rating']),
+                                        rating: reviews[index]['rating'],
+                                      ),
                                       Text(
                                         reviews[index]['date'],
                                         style: TextStyle(
-                                            fontSize: 14.0,
-                                            fontWeight: FontWeight.bold),
+                                          fontSize: 14.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ],
                                   ),
                                   SizedBox(height: 5.0),
                                   Container(
-                                    child: Text(reviews[index]['review']),
+                                    child: Text(
+                                      reviews[index]['review'],
+                                    ),
                                   ),
                                 ],
                               ),

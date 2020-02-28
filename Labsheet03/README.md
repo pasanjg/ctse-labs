@@ -1,6 +1,8 @@
-# treva_shop
+# it17120944_treva_shop
 
 A new Flutter application.
+
+[Live preview](https://pasanjg.github.io/ctse-labs)
 
 ## Getting Started
 
