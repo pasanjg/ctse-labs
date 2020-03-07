@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "477395413007",
+    "firebase_url": "https://ctse-lab4.firebaseio.com",
+    "project_id": "ctse-lab4",
+    "storage_bucket": "ctse-lab4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477395413007:android:01541e094a7599667a9b7a",
+        "android_client_info": {
+          "package_name": "lk.sliit.mobile_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477395413007-mphmtjspnusate0al0p0e9nvs437p5td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAba0M_lQT4Unz0EoGVY_J4OxFTvHZSHSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477395413007-mphmtjspnusate0al0p0e9nvs437p5td.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477395413007:android:a5c7b5c615c708127a9b7a",
+        "android_client_info": {
+          "package_name": "lk.sliit.treva_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477395413007-mphmtjspnusate0al0p0e9nvs437p5td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAba0M_lQT4Unz0EoGVY_J4OxFTvHZSHSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477395413007-mphmtjspnusate0al0p0e9nvs437p5td.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
